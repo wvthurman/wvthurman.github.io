@@ -1,7 +1,32 @@
+/* basic html styles */
+html {
+  font-size: 100%;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  max-width: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* end basic html styles*/
 h1 {
   color: red;
 }
 
+.big-heading {
+  color: green;
+  font-size: 123px;
+}
 p {
   color: purple;
 }
