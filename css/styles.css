@@ -18,21 +18,70 @@ body {
 *::after {
   box-sizing: inherit;
 }
-/* end basic html styles*/
-h1 {
-  color: red;
-}
-
-.big-heading {
-  color: green;
-  font-size: 123px;
-}
-p {
-  color: purple;
-}
 
 img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* end basic html styles*/
+
+.hero-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0px;
+  align-content: center;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-image-box {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.hero-image-box::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(106, 18, 128, 0.4);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text-box {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  align-self: center;
+  padding: 1rem;
+  z-index: 10;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 2rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: white;
 }
