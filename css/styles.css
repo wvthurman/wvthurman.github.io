@@ -61,6 +61,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .hero-text-box {
@@ -84,4 +85,28 @@ img {
   font-size: 1.5rem;
   margin-top: 0.5rem;
   color: white;
+}
+
+/* Begin Media Queries for tablets and desktop */
+
+@media (min-width: 600px) {
+  .hero-heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .hero-text {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 920px) {
+  .hero-heading {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .hero-text {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
 }
