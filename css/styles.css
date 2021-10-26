@@ -87,6 +87,37 @@ img {
   color: white;
 }
 
+/* Begin Portfolio Gallery Styles */
+
+.portfolio-gallery {
+  margin: 1rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+  grid-auto-rows: 300px;
+}
+
+.gallery-item {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-img {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.5);
+}
+
+.portfolio-gallery h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
 /* Begin Media Queries for tablets and desktop */
 
 @media (min-width: 600px) {

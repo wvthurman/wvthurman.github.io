@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My awesome portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
   </head>
   <body>
     <header class="hero-box">
@@ -21,5 +22,67 @@
         <p class="hero-text">hello world</p>
       </section>
     </header>
+    <!-- Begin Portfolio Gallery -->
+    <section class="portfolio-gallery">
+      <h1>Portfolio</h1>
+      <div class="gallery-item">
+        <a href="img/Bowl of Candy Canes.jpg" class="glightbox">
+          <img
+            src="img/Bowl of Candy Canes.jpg"
+            alt="Metallic Bowl of Candy Canes."
+            class="gallery-img"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="img/Stuart.jpg" class="glightbox">
+          <img
+            src="img/Stuart.jpg"
+            alt="Stuart the Man With a Bug Head"
+            class="gallery-img"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="img/Female Spy.jpg" class="glightbox">
+          <img
+            src="img/Female Spy.jpg"
+            alt="Sly Female Spy"
+            class="gallery-img"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="img/Mera.PNG" class="glightbox">
+          <img
+            src="img/Mera.PNG"
+            alt="Mera Queen of Atlantis"
+            class="gallery-img"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="img/WonderWoman.PNG" class="glightbox">
+          <img
+            src="img/WonderWoman.PNG"
+            alt="The Amazonian Warrior Wonder Woman"
+            class="gallery-img"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="img/Red Assasin.PNG" class="glightbox">
+          <img
+            src="img/Red Assasin.PNG"
+            alt="The Red Assasin"
+            class="gallery-img"
+          />
+        </a>
+      </div>
+    </section>
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
