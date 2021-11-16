@@ -27,6 +27,86 @@ img {
 
 /* end basic html styles*/
 
+/* Begin Navbar Styles*/
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1rem;
+  overflow: hidden;
+  background-color: white;
+  z-index: 1000;
+}
+
+.logo,
+.nav-menu {
+  text-transform: uppercase;
+}
+
+.logo,
+.nav-menu {
+  white-space: nowrap;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 33%;
+  text-align: center;
+}
+
+.social-nav-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 10%;
+}
+
+.logo a,
+.nav-menu a {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  padding: 0.8rem;
+  color: black;
+}
+
+.logo a {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.nav-menu a {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  border-bottom: 1px solid #fff;
+  transition: all ease 0.1s;
+}
+
+.nav-menu a:hover {
+  border-bottom: 1px solid #000;
+}
+
+.top-nav {
+  background: none;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  align-content: top;
+  position: fixed;
+  top: 0;
+  height: 8rem;
+}
+
 .hero-box {
   display: grid;
   grid-template-columns: 1fr;
