@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- Begin Navigation-->
-    <nav class="nav-bar top-nav">
+    <nav class="nav-bar top-nav" id="top-nav-bar">
       <h1 class="logo"><a href="index.html">Vaughn Thurman</a></h1>
       <ul class="nav-menu">
         <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
@@ -133,6 +133,42 @@
             />
           </a>
         </div>
+        <div class="gallery-item">
+          <a
+            href="/img/Website Port Images/Black and white drapery copy.jpg"
+            class="glightbox"
+          >
+            <img
+              src="/img/Website Port Images/Black and white drapery copy.jpg"
+              alt="Drapery"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="/img/Website Port Images/Black and white Still life copy.jpg"
+            class="glightbox"
+          >
+            <img
+              src="/img/Website Port Images/Black and white Still life copy.jpg"
+              alt="Still Life"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="/img/Website Port Images/Vector Self Portrait.PNG"
+            class="glightbox"
+          >
+            <img
+              src="/img/Website Port Images/Vector Self Portrait.PNG"
+              alt="Vector Self Portrait"
+              class="gallery-img"
+            />
+          </a>
+        </div>
       </section>
     </section>
     <!-- Begin About Section-->
@@ -174,6 +210,21 @@
     <script src="js/glightbox.min.js"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({ loop: true });
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("top-nav-bar").style.background = "#000000";
+        } else {
+          document.getElementById("top-nav-bar").style.background = "none";
+        }
+      }
     </script>
   </body>
 </html>
